@@ -6,5 +6,14 @@ export interface ProductType {
   price: number;
   sizes: string[];
   colors: string[];
-  images: Record<string,string>;
+  images: Record<string, string>;
 }
+
+export interface CartItemType extends ProductType {
+  selectedSize: string;
+  selectedColor: string;
+  quantity: number;
+  images:string
+}
+
+export type CartItems = CartItemType[];

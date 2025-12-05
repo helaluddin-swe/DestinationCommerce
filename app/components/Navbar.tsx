@@ -1,7 +1,12 @@
+"use client"
 import Link from 'next/link'
-import {Bell, Home, Search, ShoppingCart} from "lucide-react"
+import {Bell, Home, Search, } from "lucide-react"
+
+import ShoppingIcon from './ShoppingIcon'
 
 const Navbar = () => {
+
+
   return (
     <div className='bg-gray-200 flex justify-between  gap-5 items-center px-6 py-2'>
       <div className='text-xl md:text-3xl'>DestinationCommerce</div>
@@ -9,7 +14,9 @@ const Navbar = () => {
       <div className='flex gap-4 items-center'>
       <Link href="/"><Home/></Link>  
         <Bell/>
-        <ShoppingCart/>
+        <ShoppingIcon />
+          
+      
         <Link href="/">
         SignIn
       </Link>
